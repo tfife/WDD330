@@ -1,0 +1,52 @@
+/* HTML selectors */
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li:first-child {
+    display: block;
+    background-color: darkblue;
+}
+
+nav ul li:first-child a {
+    border-top: none;
+    text-align: right;
+    font-size: large;
+    color: white;
+}
+
+nav ul li {
+    display: none;
+    background-color: lightgray;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    border-top: 1px solid black;
+    text-align: center;
+    color: black
+}
+
+footer {
+    padding: 10px;
+    font-size: small;
+    text-align: center;
+}
+
+/* class selectors */
+
+.visible li {
+    display: block;
+}
+
+.notesList li ul {
+    padding-left: 20px;
+    margin-left: 0px;
+}
+
+/* id selectors */
