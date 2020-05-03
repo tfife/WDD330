@@ -1,0 +1,108 @@
+  
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Activity Week 2</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/ta02.css">
+</head>
+
+<body>
+    <nav>
+        <ul id='navigation'>
+            <li><a href='#menu' id='menuButton'>Menu &equiv;</a></li>
+            <li><a href='../week01/index.html'>Week 01 - Introduction to the Course</a></li>
+            <li><a href='../week02/index.html'>Week 02 - Review of the Basics</a></li>
+            <!-- <li><a href='week03'>Week 03</a></li>
+            <li><a href='week04'>Week 04</a></li>
+            <li><a href='week05'>Week 05</a></li>
+            <li><a href='week06'>Week 06</a></li>
+            <li><a href='week07'>Week 07</a></li>
+            <li><a href='week08'>Week 08</a></li>
+            <li><a href='week09'>Week 09</a></li>
+            <li><a href='week10'>Week 10</a></li>
+            <li><a href='week11'>Week 11</a></li>
+            <li><a href='week12'>Week 12</a></li>
+            <li><a href='week13'>Week 13</a></li> -->
+        </ul>
+    </nav> 
+    <main>
+        <form action="../week02/index.html">
+            <input type="submit" value="Return to Week 2" id="returnButton" />
+        </form>
+
+        <header><h3>Team Activity Week 2</h3></header>
+        <input id="input" type="number" placeholder="Put number here">
+        <input type="number" id="numberForCalculation" placeholder="adding number">
+        <div id="calculatorButtons">
+            <button onclick="addNumbers()">+</button>
+            <button onclick="subtractNumber()">-</button>
+            <button onclick="multiplyNumber()">x</button>
+            <button onclick="divideNumber(getValues())">/</button>
+        </div>
+
+        <div id="result"></div>
+    </main>
+    <footer>
+        &copy; 2020 | Portfolio | Tori Fife
+    </footer>
+
+
+    <script>
+        
+        function addNumbers() {
+            var values = getValues()
+
+            var result = values[0] + values[1]
+            
+            displayResult(result)
+        }
+
+        const subtractNumber = function() {
+            var values = getValues()
+
+            var result = values[0] - values[1]
+            
+            displayResult(result)
+        }
+
+        multiplyNumber = () => {
+            var values = getValues()
+
+            var result = values[0] * values[1]
+            
+            displayResult(result)
+        }
+
+        divideNumber = (values) => {
+
+            var result = values[0] / values[1]
+            
+            displayResult(result)
+        }
+
+        function getValues() {
+            var value1 = parseInt(document.getElementById('input').value)
+            var value2 = parseInt(document.getElementById('numberForCalculation').value)
+
+            if (isNaN(value1)) {
+                value1 = 0
+            }
+            if (isNaN(value2)) {
+                value2 = 0
+            }
+            return [value1, value2]
+        }
+
+        function displayResult(result) {
+            document.getElementById('result').innerHTML = result
+        }
+        
+    </script>
+    <script src="../scripts/main.js"></script>
+</body>
+
+</html>

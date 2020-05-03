@@ -13,7 +13,7 @@
         <ul id='navigation'>
             <li><a href='#menu' id='menuButton'>Menu &equiv;</a></li>
             <li><a href='../week01/index.html'>Week 01 - Introduction to the Course</a></li>
-            <li><a href='../week02/index.html'>Week 02</a></li>
+            <li><a href='../week02/index.html'>Week 02 - Review of the Basics</a></li>
             <!-- <li><a href='week03'>Week 03</a></li>
             <li><a href='week04'>Week 04</a></li>
             <li><a href='week05'>Week 05</a></li>
@@ -28,7 +28,46 @@
         </ul>
     </nav> 
     
-    <h1>There is no content for this week yet!</h1>
+    <h1>Week 02 - Review of the Basics</h1>
+
+    <section>
+        <h2>Team Activity</h2>
+        <form action="ta02.html" style="text-align: center;">
+            <input type="submit" value="Go to Team Activity!"/>
+        </form>
+    </section>
+
+    <section>
+        <h2>Notes</h2>
+        <ul class="notesList">
+            <li>use let instead of var because let has block scope and doesn't allow other bad stuff var can do. var may be seen in older code</li>
+            <li>use either camelCased or underscore_separated variable names</li>
+            <li>
+                In the following code, changing d.value also changes c.value because d and c reference the same object
+                <br>
+                <div style="background: lightgray; padding: 10px;">
+                const c = { value: 1 };<br>
+                let d = c; // c.value = 1, d.value = 1<br>
+                d.value = 2; // c.value = 2, d.value = 2<br>
+                </div>
+            </li>
+            <li>String functions
+                <ul>
+                    <li>.toUpperCase() : string</li>
+                    <li>.toLowerCase() : string</li>
+                    <li>.charAt(index) : char</li>
+                    <li>.indexOf(character) : number</li>
+                    <li>.lastIndexOf(character) : number</li>
+                    <li>.startsWith(character) : bool</li>
+                    <li>.endsWith(character) : bool</li>
+                    <li>.concat('string', 'anotherString') : string</li>
+                </ul>
+            </li>
+            <li>use backslash to escape characters (quotes, newlines, tabs, \r).</li>
+            <li>Question: what is \r and how is it different from \n?</li>
+        </ul>
+    </section>
+
 
     <footer>
         &copy; 2020 | WDD 330 Portfolio | Tori Fife
