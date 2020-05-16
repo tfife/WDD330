@@ -5,8 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Week 04</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/w04.css">
 </head>
-<body>
-    <h1>There is no content for this week yet!</h1>
+<body onload=showNav(1)>
+
+    <nav id='nav'></nav>
+    
+    <h1>Week 04 - Forms</h1>
+
+    <section>
+        <h2>Team Activity</h2>
+        <form action="ta04.html" style="text-align: center;">
+            <button type="submit">Go to Team Activity!</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Notes</h2>
+        <ul class="notesList">
+            <li>Reset buttons can be considered bad practice</li>
+            <li>following sample code adds a submit listener:<br>
+                <div class="codeBlock">
+                    const form = document.forms['search']
+                    <br><br>
+                    form.addEventListener('submit', search, false)
+                    <br><br>
+                    function search() {<br>
+                        <span style="margin-left: 10px">// do stuff</span><br>
+                    }
+                </div>
+            </li>
+            <li>Use event.preventDefault() to prevent default submit behavior</li>
+            <li>input.value will give the current contents of the input (where input is a variable representing an input element)<br></li>
+            <li>Encapsulation - details kept from user</li>
+            <li>Polymorphism - some parts are reusable but still customizable</li>
+            <li>Inheritance - take features from another object and add some more</li>
+        </ul>
+    </section>
+
+    <section class="dragBoxSection">
+        <p>drag the star into the box (will not work on mobile)</p>
+        <div id="desktopDragBoxes">
+            <div class="targetBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="targetBox" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img id="starDesktop" src="../images/star.png" draggable="true" ondragstart="drag(event)" width="70" height="70">
+            </div>
+        </div>
+    </section>
+    
+    <section class="dragBoxSection">
+        <p>drag this star anywhere (mobile only)</p>
+        <div id="mobileDragBoxes">
+            <div class="targetBox">
+                <img id="starMobile" src="../images/star.png" draggable="true" width="70" height="70">
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        &copy; 2020 | WDD 330 Portfolio | Tori Fife
+    </footer>
+
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/w04.js"></script>
 </body>
 </html>

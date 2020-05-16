@@ -19,8 +19,8 @@ function showNav(depth) {
             "<li><a href='" + pathPrefix + "week01/index.html'>Week 01 - Introduction to the Course</a></li>" +
             "<li><a href='" + pathPrefix + "week02/index.html'>Week 02 - Review of the Basics</a></li>" +
             "<li><a href='" + pathPrefix + "week03/index.html'>Week 03 - Objects and Arrays</a></li>" +
-            "<!--<li><a href='" + pathPrefix + "week04'>Week 04</a></li>" +
-            "<li><a href='" + pathPrefix + "week05'>Week 05</a></li>" +
+            "<li><a href='" + pathPrefix + "week04/index.html'>Week 04 - Forms</a></li>" +
+            "<!--<li><a href='" + pathPrefix + "week05'>Week 05</a></li>" +
             "<li><a href='" + pathPrefix + "week06'>Week 06</a></li>" +
             "<li><a href='" + pathPrefix + "week07'>Week 07</a></li>" +
             "<li><a href='" + pathPrefix + "week08'>Week 08</a></li>" +

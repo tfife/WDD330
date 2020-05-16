@@ -1,0 +1,55 @@
+  
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Activity Week 2</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/ta04.css">
+</head>
+
+<body onload=showNav(1)>
+    
+    <nav id='nav'></nav>
+
+    
+    <form action="../week04/index.html">
+        <input type="submit" value="Return to Week 4" id="returnButton" />
+    </form>
+    
+
+    <main>
+
+        <h1>Tic Tac Toe</h1>
+        <div id="board" class="board">
+            <!-- row one -->
+            <div id="A1" class="item a 1 diagonal1"></div>
+            <div id="A2" class="item a 2"></div>
+            <div id="A3" class="item a 3 diagonal2"></div>
+
+            <!-- row two -->
+            <div id="B1" class="item b 1"></div>
+            <div id="B2" class="item b 2 diagonal1 diagonal2"></div>
+            <div id="B3" class="item b 3"></div>
+
+            <!-- row three -->
+            <div id="C1" class="item c 1 diagonal2"></div>
+            <div id="C2" class="item c 2"></div>
+            <div id="C3" class="item c 3 diagonal1"></div>
+        </div>
+
+        <button id="reset" class="reset">Reset</button>
+
+    </main>
+
+    <footer>
+        &copy; 2020 | Portfolio | Tori Fife
+    </footer>
+
+    <script src="../scripts/ta04.js"></script>
+    <script src="../scripts/main.js"></script>
+</body>
+
+</html>

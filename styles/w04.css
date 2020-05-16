@@ -1,0 +1,27 @@
+.targetBox {
+  width: 70px;
+  height: 70px;
+  padding: 10px;
+  border: 1px solid #aaaaaa;
+}
+
+.dragBoxSection {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+
+#desktopDragBoxes, #mobileDragBoxes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#starMobile {
+    position: absolute;
+}
+
+#dragBoxMobile {
+    display: block;
+}
