@@ -5,8 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Week 05</title>
+    <link rel="stylesheet" href="../../styles/main.css">
 </head>
-<body>
-    <h1>There is no content for this week yet!</h1>
+<body onload=showNav(1)>
+
+    <nav id='nav'></nav>
+    
+    <h1>Week 05 - Debugging</h1>
+
+    <section>
+        <h2>Team Activity</h2>
+        <form action="ta05" style="text-align: center;">
+            <button type="submit">Go to Team Activity!</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Notes</h2>
+        <ul class="notesList">
+            <li>Errors are of the following types:
+                <ul>
+                    <li>System Error</li>
+                    <li>Programmer Error</li>
+                    <li>User Error</li>
+                </ul>
+            </li>
+            <li>Reference Errors occur when something is called (or "referred to") when it doesn't exist where it's expected</li>
+            <li>Stack Trace shows where an error occurred</li>
+            <li>Warnings happen when there's a problem in the code but it doesn't cause the program to fail</li>
+            <li>Strict mode produces more exceptions and warnings</li>
+            <li>Lint programs find non-error sloppy code</li>
+            <li>alert(something) can be used as breakpoints</li>
+            <li>Use console to show info</li>
+            <li>Create JavaScript errors</li>
+            <li>Throw exceptions</li>
+            <li>Use try, catch, and finally</li>
+            <li>Write tests</li>
+            <li>Test Driven Development (TDD)
+                <ul>
+                    <li>Write tests (that initially fail)</li>
+                    <li>Write code to pass the tests</li>
+                    <li>Refactor the code</li>
+                    <li>Test refactored code</li>
+                    <li>Write more tests for new features</li>
+                </ul>
+            </li>
+            <li>Jest</li>
+
+        </ul>
+    </section>
+
+    <footer>
+        &copy; 2020 | WDD 330 Portfolio | Tori Fife
+    </footer>
+
+    <script src="../scripts/main.js"></script>
 </body>
 </html>
