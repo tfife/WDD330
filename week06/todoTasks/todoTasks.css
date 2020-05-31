@@ -1,0 +1,152 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+main {
+    font-family: 'Roboto';
+    padding-left: 5px;
+    padding-right: 5px;
+    position: relative;
+    flex-grow: 1;
+}
+
+.task {
+    margin: auto;
+    display: block;
+    margin-top: 12px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ff9900;
+    background-color: #f4f4f4;
+    box-shadow: 2px 2px 4px gray;
+}
+
+.taskHeader {
+    display: flex;
+    flex-direction: row;
+}
+
+.statusBox {
+    width: 35%;
+    min-width: 115px;
+    max-height: 24px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 5px;
+    border: 2px solid white;
+    box-shadow: 2px 2px 2px gray;
+    background-color: #ff9900;
+    color: white;
+    font-size: 14px;
+}
+
+.taskTitle {
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top:2px;
+}
+
+.taskDate {
+    padding-top: 12px;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.taskDetails {
+    display: none;
+}
+
+.taskDescription {
+    padding-top: 6px;
+    font-size: 16px;
+}
+
+.deleteTaskButton {
+    text-align: center;
+    color: red;
+    font-size: small;
+    text-decoration: underline;
+    margin-top: 10px;
+    margin-bottom: -5px;
+}
+
+
+/** id attributes **/
+
+#emptyState {
+    display: none;
+}
+
+#imgWrapper {
+    padding-top: 5vh;
+    text-align: center;
+}
+
+#imgWrapper img {
+    width: 60%;
+    height: auto;
+}
+
+#addTaskButton {
+    position: fixed;
+    right: 20px;
+    bottom: 30px;
+    min-width: 0;
+    min-height: 0;
+    width: 56px;
+    height: 56px;
+    border-radius: 30px;
+    background-color: darkblue;
+    box-shadow: 1px 4px 6px darkgray;
+    color: white;
+    font-size: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#addTaskButton img {
+    width: 32px;
+    height: auto;
+}
+
+#taskCreator {
+    display: none;
+    position: fixed;
+    top: 40px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    box-sizing: border-box;
+    width: 90%;
+    height: 85%;
+    margin: auto;
+    margin-top: 20px;
+    background-color: whitesmoke;
+    border: 1px solid blue;
+    border-radius: 20px;
+    padding: 20px;
+    padding-top: 0;
+}
+
+#taskCreator input {
+    width: 100%;
+}
+
+#closeTaskCreatorButton {
+    min-width: 0;
+    min-height: 0;
+    width: 32px;
+    height: 32px;
+    margin-top: 10px;
+    margin-right: -10px;
+    border-radius: 20px;
+    float: right;
+    background-color: darkblue;
+    color: white;
+    font-size: 18px;
+}

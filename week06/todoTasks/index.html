@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Todo Tasks</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="todoTasks.css">
+</head>
+<body onload=showNav(2)>
+
+    <nav id='nav'style="z-index: 10"></nav>
+
+    <main>
+        <section id="emptyState">
+            <p>You have no todo tasks.<br><br>Click on the + icon in the bottom righthand corner to add some!</p>
+            <div id="imgWrapper"><img src="images/tasksEmptyState.png"></div>
+        </section>
+
+        <section id="tasks"></section>
+
+        <section id="taskCreator">
+            <button id="closeTaskCreatorButton">X</button>
+            <h2>New Task</h2>
+
+            Title:<br><input type="text" id="newTaskTitle"><br><br>
+            Date:<br><input type="date" id="newTaskDate"><br><br>
+            Notes:<br><input type="text" id="newTaskDescription"><br><br>
+
+            <input id="createTaskButton" type="submit" value="Create" />
+
+        </section>
+
+        <button id="addTaskButton"><img src="images/addIcon.png"></button>
+
+    </main>
+
+
+    <footer>
+        &copy; 2020 | WDD 330 Portfolio | Tori Fife
+    </footer>
+
+    <script src="../../scripts/main.js"></script>
+    <script type="module" src="task.js"></script>
+    <script type="module" src="todoTasks.js"></script>
+</body>
+</html>
