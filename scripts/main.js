@@ -23,7 +23,7 @@ function showNav(depth) {
             <li><a href='${pathPrefix}week04'>Week 04 - Forms</a></li>
             <li><a href='${pathPrefix}week05'>Week 05 - Debugging</a></li>
             <li><a href='${pathPrefix}week06'>Week 06 - Todo App</a></li>
-            <li><a href='${pathPrefix}week07'>Week 07 - ????</a></li>
+            <li><a href='${pathPrefix}week07'>Week 07 - Functions and Ajax</a></li>
             <!--<li><a href='${pathPrefix}week08'>Week 08</a></li>
             <li><a href='${pathPrefix}week09'>Week 09</a></li>
             <li><a href='${pathPrefix}week10'>Week 10</a></li>
