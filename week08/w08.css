@@ -1,0 +1,23 @@
+#translate {
+    width: 5px;
+    transform: translate(15px, -7px);
+}
+
+#rotate {
+    width: 5px;
+    transform: rotate(350deg);
+}
+
+#scale {
+    width: 5px;
+    transform: scale(1.5);
+}
+
+#skew {
+    width: 5px;
+    transform: skew(15deg, 2deg);
+}
+
+#myCanvas {
+    border: 1px solid black;
+}

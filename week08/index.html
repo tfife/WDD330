@@ -5,8 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Week 08</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="w08.css">
 </head>
-<body>
-    <h1>There is no content for this week yet!</h1>
+<body onload=showNav(1)>
+
+    <nav id='nav'></nav>
+    
+    <h1>Week 08 - Transitions and Other Exciting Things</h1>
+
+    <section>
+        <h2>Team Activity</h2>
+        <form action="ta08" style="text-align: center;">
+            <button type="submit">Go to Team Activity!</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Notes</h2>
+        <ul class="notesList">
+            <li>
+                Transform lets you do the following to any element on the page:
+                <ul>
+                    <li><div id="translate">translate</div></li>
+                    <li><div id="rotate">rotate</div></li>
+                    <li><div id="scale">scale</div></li>
+                    <li><div id="skew">skew</div></li>
+                </ul>
+            </li>
+            <li>transform-origin changes the center point of the transformation</li>
+            <li>transformations will be done in the order you put them</li>
+            <li>Transitions</li>
+            <li>Canvas - use canvas tags to say not supported because they'll only appear if it doesn't work</li>
+            <li>Draw paths for unique shapes</li>
+            <li>Drawings can be saved</li>
+            <li>Convert to black and white</li>
+            <li>affect videos</li>
+            <li>Drag and Drop. Note: doesn't work the same on mobile</li>
+
+        </ul>
+        <canvas id="myCanvas" width="200" height="200">
+            Sorry! Your browser doesn't support Canvas.
+        </canvas>
+    </section>
+
+    <footer>
+        &copy; 2020 | WDD 330 Portfolio | Tori Fife
+    </footer>
+
+    <script src="../scripts/main.js"></script>
+    <script src="w08.js"></script>
 </body>
 </html>
