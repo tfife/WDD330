@@ -25,8 +25,8 @@ function showNav(depth) {
             <li><a href='${pathPrefix}week06'>Week 06 - Todo App</a></li>
             <li><a href='${pathPrefix}week07'>Week 07 - Functions and Ajax</a></li>
             <li><a href='${pathPrefix}week08'>Week 08 - Transitions and Other Exciting Stuff</a></li>
-            <!--<li><a href='${pathPrefix}week09'>Week 09</a></li>
-            <li><a href='${pathPrefix}week10'>Week 10</a></li>
+            <li><a href='${pathPrefix}week09'>Week 09 - Window and APIs</a></li>
+            <!--<li><a href='${pathPrefix}week10'>Week 10</a></li>
             <li><a href='${pathPrefix}week11'>Week 11</a></li>
             <li><a href='${pathPrefix}week12'>Week 12</a></li>
             <li><a href='${pathPrefix}week13'>Week 13</a></li>-->

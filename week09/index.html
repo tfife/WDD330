@@ -5,8 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Week 09</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="w09.css">
 </head>
-<body>
-    <h1>There is no content for this week yet!</h1>
+<body onload=showNav(1)>
+
+    <nav id='nav'></nav>
+    
+    <h1>Week 09 - Window and APIs</h1>
+
+    <section>
+        <h2>Team Activity</h2>
+        <form action="ta09" style="text-align: center;">
+            <button type="submit">Go to Team Activity!</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Notes</h2>
+        <ul class="notesList">
+            <li>BOM = Browser Object model</li>
+            <li>window.alert('text'), window.prompt('text'), window.confirm('text')</li>
+            <li>Finding Browser Information</li>
+            <li>There's a navigator object. window.navitagor.userAgent will show the browser</li>
+            <li>window.location.href lets you change the location. You can also do window.location.assign()</li>
+            <li>Browser History</li>
+            <li>window.history will show previous pages visited before this page</li>
+            <li>window.history.go(-1) would go back one page. 0 would reload, 1 would go forward one</li>
+            <li>window.history.forward() and window.history.back() go forward and back in history</li>
+            <li>Controlling windows</li>
+            <li>window.screen.height will give the height as a number. window.screen.availHeight takes away operating system menus</li>
+            <li>Cookies</li>
+            <li>create cookie by saying document.cookie = 'variableName=value'</li>
+            <li>document.cookie will give you all current values in cookie jar.</li>
+            <li>use split to access individual cookies. </li>
+            <li>cookies are session cookies. To make them persistent use "; expires=date" when it's created</li>
+            <li>Timing functions</li>
+            <li>window.setTimeout(() => { //do stuff }, 3000) will set a 3000 timer and at the end will do the stuff. It will return an ID of which timeout it was</li>
+            <li>window.clearTimeout(5) when the id is 5</li>
+            <li>setInterval acts like setTimeout but will repeat</li>
+            <br>
+            <li>Make your own attributes. Name them data-whateverNameYouWant</li>
+            <li>localStorage</li>
+            <li>navigator.geolocation.getCurrentPosition(youAreHere) where youAreHere is a function which will automatically have a parameter giving a position. Position can be accessed with position.coords.latitude etc.</li>
+            <li>also use position.speed, .altitude .heading (direction) .timestamp</li>
+            <li>navigator.geolocation.watchPosition(youAreHere) is the same but updates with every change in position</li>
+            <li>Workers (not super sure what they do)</li>
+
+        </ul>
+    </section>
+
+    <footer>
+        &copy; 2020 | WDD 330 Portfolio | Tori Fife
+    </footer>
+
+    <script src="../scripts/main.js"></script>
+    <script src="w09.js"></script>
 </body>
 </html>
