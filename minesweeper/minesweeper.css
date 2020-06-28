@@ -1,0 +1,29 @@
+.bombPic {
+    width: 20px;
+    height: auto;
+    margin: auto;
+}
+
+.square {
+    width: 28px;
+    height: 28px;
+    margin: 1px;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+#board {
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
