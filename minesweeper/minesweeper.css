@@ -1,3 +1,14 @@
+html {
+    font-family: "Trebuchet MS";
+    background-color: rgb(15,15,15);
+    text-align: center;
+    position: relative;
+}
+
+h1 {
+    color: white;
+}
+
 .bombPic {
     width: 20px;
     height: auto;
@@ -8,7 +19,7 @@
     width: 28px;
     height: 28px;
     margin: 1px;
-    background-color: lightblue;
+    background-color: cyan;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,4 +37,44 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+}
+
+#toggleWrapper {
+    width: 130px;
+    height: 32px;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 35px;
+    overflow: hidden;
+    border: 1px solid cyan;
+    position: relative;
+}
+
+#toggle {
+    width: 200px;
+    height: 32px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: linear-gradient(to right, darkcyan, red);
+    font-weight: bold;
+    font-size: medium;
+    position: absolute;
+    color: white;
+}
+
+#toggleCircle {
+    width: 62px;
+    height: 32px;
+    background-color: cyan;
+    border-radius: 35px;
+}
+
+#settings {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: white;
 }
