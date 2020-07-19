@@ -136,9 +136,10 @@ h1 {
 
   #highScores {
       width: 300px;
-      margin-top: 10px;
       padding-bottom: 10px;
+      padding-top: 20px;
       border-bottom: 2px dashed white;
+      margin: auto;
   }
   #highScores h3 {
       width: 300px;
