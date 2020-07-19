@@ -9,12 +9,29 @@
     <style id="boardStyle"></style>
 </head>
 <body>
-    <div id="settings">settings</div>
-    <h1>Minesweeper</h1>
+    <img src="settings.png" id="settings" width="36px"></div>
+    <div id="settingsModal">
+        <div id="settingsContent">
+            <h2 style="text-align: center;">Settings</h2>
+            <button id="resetButton">Restart</button>
+            <br><br><br>
+            <span id="clearHighScores">Clear High Scores</span>
+        </div>
+    </div>
+
+    <h1 id="heading">Minesweeper</h1>
+    <div id="timer">00:00</div>
     <div id="board"></div>
+    <div id="counts"><span id="numBombs"></span><span id="numFlags">0 Flags</span></div>
     <div id="toggleWrapper">
+        <button id="newGameButton">New Game</button>
         <div id="toggle"><span>Sweep</span><div id="toggleCircle"></div><span>+Flags</span> </div>
     </div>
+    <div id="highScores"></div>
+
+    <footer>
+        &copy; 2020 | WDD 330 Portfolio | Tori Fife
+    </footer>
 </body>
 <script src="../scripts/main.js"></script>
 <script src="minesweeper.js"></script>
