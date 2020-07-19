@@ -350,9 +350,6 @@ function forAllSquares(fun) {
 
 function resetGame() {
     console.log('reset')
-    height = 14
-    width = 10
-    numBombs = 24
     board = []
     bombs = []
     firstClick = true
